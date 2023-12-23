@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Coin Price Marquee</title>
+    <title>Coin Price Marquee and List</title>
     <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
+    <script src="https://widgets.coingecko.com/coingecko-coin-list-widget.js"></script>
     <style>
         html, body {
             margin: 0;
@@ -10,7 +11,8 @@
             height: 100%;
             overflow: hidden; /* Prevents scrollbars from appearing */
         }
-        coingecko-coin-price-marquee-widget {
+        coingecko-coin-price-marquee-widget,
+        coingecko-coin-list-widget {
             width: 100%; /* Set the width to 100% of the parent element */
             height: auto; /* Set height to auto to adjust based on content */
             display: block; /* Ensure it's a block-level element */
@@ -24,5 +26,11 @@
         background-color="#ffffff" 
         locale="en">
     </coingecko-coin-price-marquee-widget>
+
+    <coingecko-coin-list-widget 
+        coin-ids="filecoin,bittensor,render-token,the-graph,theta-token,helium,iota,fetch-ai,arweave,akash-network,iotex,singularitynet,helium-mobile,siacoin,holotoken,basic-attention-token,ocean-protocol,chia,ankr,livepeer" 
+        currency="usd" 
+        locale="en">
+    </coingecko-coin-list-widget>
 </body>
 </html>
