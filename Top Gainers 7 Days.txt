@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coin Price Marquee</title>
+    <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
+</head>
+<body>
+    <coingecko-coin-price-marquee-widget 
+        coin-ids="wifi,deeper-network,drop-wireless-infrastructure,xnet-mobile,helium-mobile,streamr,geodnet,nodle-network,dimo,iotex,hopr" 
+        currency="usd" 
+        background-color="#ffffff" 
+        locale="en">
+    </coingecko-coin-price-marquee-widget>
+</body>
+</html>
