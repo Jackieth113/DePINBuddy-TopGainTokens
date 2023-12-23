@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Coin Price Marquee and List</title>
-    <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
-    <script src="https://widgets.coingecko.com/coingecko-coin-list-widget.js"></script>
+    <title>CoinGecko Widgets</title>
     <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden; /* Prevents scrollbars from appearing */
-        }
-        coingecko-coin-price-marquee-widget,
-        coingecko-coin-list-widget {
-            width: 100%; /* Set the width to 100% of the parent element */
-            height: auto; /* Set height to auto to adjust based on content */
-            display: block; /* Ensure it's a block-level element */
+        .headline {
+            font-family: 'Arial', sans-serif;
+            font-size: 11px;
         }
     </style>
 </head>
 <body>
+
+    <div class="headline">Top Gainers in 7 Days</div>
+    <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
     <coingecko-coin-price-marquee-widget 
         coin-ids="wifi,deeper-network,drop-wireless-infrastructure,xnet-mobile,helium-mobile,streamr,geodnet,nodle-network,dimo,iotex,hopr" 
         currency="usd" 
@@ -27,10 +20,13 @@
         locale="en">
     </coingecko-coin-price-marquee-widget>
 
+    <div class="headline">Top 20 by Market Cap</div>
+    <script src="https://widgets.coingecko.com/coingecko-coin-list-widget.js"></script>
     <coingecko-coin-list-widget 
         coin-ids="filecoin,bittensor,render-token,the-graph,theta-token,helium,iota,fetch-ai,arweave,akash-network,iotex,singularitynet,helium-mobile,siacoin,holotoken,basic-attention-token,ocean-protocol,chia,ankr,livepeer" 
         currency="usd" 
         locale="en">
     </coingecko-coin-list-widget>
+
 </body>
 </html>
