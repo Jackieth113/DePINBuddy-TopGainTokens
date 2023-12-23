@@ -3,30 +3,44 @@
 <head>
     <title>CoinGecko Widgets</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0; /* Light grey background for better readability */
+        }
         .headline {
-            font-family: 'Arial', sans-serif;
             font-size: 11px;
+            margin: 20px 0; /* Add some space around headlines */
+            padding: 0 10px; /* Padding for better text visibility */
+        }
+        .widget-container {
+            padding: 0 10px; /* Padding for widgets */
         }
     </style>
 </head>
 <body>
 
     <div class="headline">Top Gainers in 7 Days</div>
-    <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
-    <coingecko-coin-price-marquee-widget 
-        coin-ids="wifi,deeper-network,drop-wireless-infrastructure,xnet-mobile,helium-mobile,streamr,geodnet,nodle-network,dimo,iotex,hopr" 
-        currency="usd" 
-        background-color="#ffffff" 
-        locale="en">
-    </coingecko-coin-price-marquee-widget>
+    <div class="widget-container">
+        <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
+        <coingecko-coin-price-marquee-widget 
+            coin-ids="wifi,deeper-network,drop-wireless-infrastructure,xnet-mobile,helium-mobile,streamr,geodnet,nodle-network,dimo,iotex,hopr" 
+            currency="usd" 
+            background-color="#ffffff" 
+            locale="en">
+        </coingecko-coin-price-marquee-widget>
+    </div>
 
     <div class="headline">Top 20 by Market Cap</div>
-    <script src="https://widgets.coingecko.com/coingecko-coin-list-widget.js"></script>
-    <coingecko-coin-list-widget 
-        coin-ids="filecoin,bittensor,render-token,the-graph,theta-token,helium,iota,fetch-ai,arweave,akash-network,iotex,singularitynet,helium-mobile,siacoin,holotoken,basic-attention-token,ocean-protocol,chia,ankr,livepeer" 
-        currency="usd" 
-        locale="en">
-    </coingecko-coin-list-widget>
+    <div class="widget-container">
+        <script src="https://widgets.coingecko.com/coingecko-coin-list-widget.js"></script>
+        <coingecko-coin-list-widget 
+            coin-ids="filecoin,bittensor,render-token,the-graph,theta-token,helium,iota,fetch-ai,arweave,akash-network,iotex,singularitynet,helium-mobile,siacoin,holotoken,basic-attention-token,ocean-protocol,chia,ankr,livepeer" 
+            currency="usd" 
+            locale="en">
+        </coingecko-coin-list-widget>
+    </div>
 
 </body>
 </html>
