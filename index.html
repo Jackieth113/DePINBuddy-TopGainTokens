@@ -7,15 +7,20 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f0f0f0; /* Light grey background for better readability */
+            background: #251863; /* Dark blue background */
+            color: #FFFFFF; /* White text color */
         }
         .headline {
             font-size: 11px;
-            margin: 20px 0; /* Add some space around headlines */
-            padding: 0 10px; /* Padding for better text visibility */
+            margin: 20px 0;
+            padding: 0 10px;
         }
         .widget-container {
-            padding: 0 10px; /* Padding for widgets */
+            padding: 0 10px;
+            background-color: #251863; /* Dark blue background for widgets */
+        }
+        coingecko-coin-price-marquee-widget, coingecko-coin-list-widget {
+            background-color: #251863 !important; /* Dark blue background for CoinGecko widgets */
         }
     </style>
 </head>
@@ -27,7 +32,7 @@
         <coingecko-coin-price-marquee-widget 
             coin-ids="wifi,deeper-network,drop-wireless-infrastructure,xnet-mobile,helium-mobile,streamr,geodnet,nodle-network,dimo,iotex,hopr" 
             currency="usd" 
-            background-color="#ffffff" 
+            background-color="#251863" 
             locale="en">
         </coingecko-coin-price-marquee-widget>
     </div>
