@@ -24,8 +24,18 @@
 
     <div class="headline">Top Gainers in 7 Days</div>
     <div class="widget-container">
-<script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
-<coingecko-coin-price-marquee-widget  coin-ids="nosana,edge-matrix-computing,bware,aleph,siacoin" currency="usd" background-color="#ffffff" locale="en"></coingecko-coin-price-marquee-widget>
+<div id="cr-widget-marquee"
+        data-coins="nosana,bware-labs,aleph-im,siacoin,wrapped-pkt,pocket-network,bittensor"
+        data-theme="light"
+        data-show-symbol="true"
+        data-show-icon="true"
+        data-show-period-change="true"
+        data-period-change="7D"
+        data-api-url="https://api.cryptorank.io/v0"
+      >
+        <a href="https://cryptorank.io">Coins by Cryptorank</a>
+        <script src="https://cryptorank.io/widget/marquee.js"></script>
+      </div>
     </div>
 
     <div class="headline">Top 20 by Market Cap</div>
